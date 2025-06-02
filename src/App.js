@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header/Header";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Shop from "./components/Shop/Shop";
 import Review from "./components/Review/Review";
 import Inventory from "./components/Inventory/Inventory";
