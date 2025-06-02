@@ -1,0 +1,172 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 24px 0 0;
+  /* background: linear-gradient(90deg, #f8fafc 60%, #e0e7ef 100%);  <-- bunu silin və ya şərhə alın */
+  background: transparent; /* əlavə edin */
+  border-bottom: 2px solid #e0e7ef;
+}
+
+
+.header-title-bg {
+  width: 100%;
+  margin: 0 auto 18px;
+  padding: 32px 0 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #e0e7ef 0%, #f7c873 100%);
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 2px 12px #e0e7ef;
+  transition: background 0.3s;
+}
+
+.header-title-bg:hover {
+  background: linear-gradient(90deg, #f7c873 0%, #e0e7ef 100%);
+}
+
+/* === Başlıq Mətni === */
+.header-title-bg h1,
+.header h1 {
+  margin: 0 0 14px;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2e3c5d;
+  background: #fff;
+  padding: 12px 38px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #e0e7ef;
+  display: inline-block;
+  transition: color 0.3s, background 0.3s;
+}
+
+.header-title-bg:hover h1 {
+  color: #f7c873;
+  background: #2e3c5d;
+}
+
+.header h1 {
+  margin: 10px 0 14px;
+  padding: 8px 32px;
+  border-radius: 12px;
+  font-size: 2.2rem;
+}
+
+/* === Naviqasiya Paneli === */
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 0 24px;
+  min-height: 54px;
+  max-width: 900px;
+  margin: 0 auto 18px;
+  background: #2e3c5d; 
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #b0c4de33;
+  position: relative;
+  z-index: 1;
+}
+
+.header nav a {
+  display: inline-block;
+  color: #f3f6fa; 
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.header nav a:hover,
+.header nav a.active {
+  background-color: #f7c873;
+  color: #2e3c5d;
+}
+
+.header nav span {
+  color: #ff4d4f;
+  font-weight: 600;
+  margin-left: 12px;
+  font-size: 1rem;
+}
+
+.login-btn {
+  margin-left: 12px;
+  background: #f7c873;
+  color: #2e3c5d;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05rem;
+  box-shadow: 0 1px 4px #e0e7ef;
+  transition: background 0.2s, color 0.2s;
+}
+
+.login-btn:hover {
+  background: #2e3c5d;
+  color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  .header-title-bg h1,
+  .header h1 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    padding: 4px 6px;
+  }
+
+  .header nav {
+    font-size: 0.92rem;
+    gap: 2px;
+    padding: 0 2px;
+    min-height: 38px;
+  }
+
+  .header nav a {
+    margin: 0 4px;
+    padding: 5px 6px;
+    font-size: 0.92rem;
+  }
+
+  .login-btn {
+    padding: 5px 8px;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-title-bg h1,
+  .header h1 {
+    font-size: 0.85rem;
+    padding: 2px 2px;
+  }
+
+  .header nav {
+    font-size: 0.8rem;
+    gap: 1px;
+    padding: 0 1px;
+    min-height: 30px;
+  }
+
+  .header nav a {
+    margin: 0 1px;
+    padding: 3px 4px;
+    font-size: 0.8rem;
+  }
+
+  .login-btn {
+    padding: 3px 4px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,78 @@
+.shopContainer {
+  width: 100%;
+      min-height: 100vh;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  padding: 32px 0;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.productsCol {
+  flex: 3;
+  min-width: 0;
+}
+
+.cartCol {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #e0e7ef;
+  padding: 24px 16px;
+  margin-top: 8px;
+  height: fit-content;
+}
+
+.loaderImg {
+  width: 220px;
+  display: block;
+  margin: 32px auto;
+  opacity: 0.7;
+}
+
+.productsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.categorySelectWrapper {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.categoryLabel {
+  font-size: 1.08rem;
+  color: #2e3c5d;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.categorySelect {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1.5px solid #e0e7ef;
+  background: #fff8e1;
+  color: #2e3c5d;
+  font-size: 1.05rem;
+  font-weight: 500;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px #e0e7ef55;
+  cursor: pointer;
+}
+.categorySelect:focus {
+  border: 1.5px solid #f7c873;
+  box-shadow: 0 2px 12px #f7c87355;
+}

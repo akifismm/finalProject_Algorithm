@@ -1,0 +1,82 @@
+.card {
+  max-width: 320px;
+  min-width: 220px;
+  margin: 18px auto;
+  border: 1px solid #e0e7ef;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #e0e7ef;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 6px 24px #b0c4de55;
+  transform: translateY(-4px) scale(1.03);
+}
+
+.imgBox {
+  text-align: center;
+  padding: 18px 12px 8px 12px;
+  background: #f8fafc;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 1px 4px #ddd;
+}
+
+.body {
+  padding: 0 18px 18px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  min-height: 48px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #2e3c5d;
+  margin: 10px 0 6px 0;
+  text-align: left;
+}
+
+.seller {
+  color: #888;
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+
+.price {
+  color: #d32f2f;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addBtn {
+  background: #2e3c5d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.addBtn:hover {
+  background: #f7c873;
+  color: #2e3c5d;
+}

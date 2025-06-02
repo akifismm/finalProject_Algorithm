@@ -1,0 +1,82 @@
+.container {
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #e0e7ef;
+}
+
+.title {
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  color: #2e3c5d;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #b0c4de;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  border-color: #4e6e8e;
+}
+
+.button {
+  background: #2e3c5d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #4e6e8e;
+}
+
+.list {
+  margin-top: 28px;
+}
+
+.listTitle {
+  font-size: 1.1rem;
+  color: #2e3c5d;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 8px 10px;
+  box-shadow: 0 1px 4px #e0e7ef;
+}
+
+.img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #f3f6fa;
+  border: 1px solid #e0e7ef;
+}
