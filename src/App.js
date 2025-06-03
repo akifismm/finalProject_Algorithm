@@ -13,17 +13,21 @@ import Login from "./components/Login/Login";
 function App() {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Shop} />
-        <Route path="/shop" component={Shop} />
-        <Route path="/review" component={Review} />
-        <Route path="/inventory" component={Inventory} />
-        <Route path="/product/:productKey" component={ProductDetails} />
-        <Route path="/login" component={Login} />
-        <Route path="*" component={Notfound} />
-      </Switch>
-      <Footer />
+      <div className="app-container">
+        <Header />
+        <div className="main-content">
+          <Switch>
+            <Route exact path="/" component={Shop} />
+            <Route path="/shop" component={Shop} />
+            <Route path="/review" component={Review} />
+            <Route path="/inventory" component={Inventory} />
+            <Route path="/product/:productKey" component={ProductDetails} />
+            <Route path="/login" component={Login} />
+            <Route path="*" component={Notfound} />
+          </Switch>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 }
