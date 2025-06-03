@@ -118,55 +118,104 @@
 }
 
 
-@media (max-width: 600px) {
-  .header-title-bg h1,
-  .header h1 {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    padding: 4px 6px;
-  }
-
-  .header nav {
-    font-size: 0.92rem;
-    gap: 2px;
-    padding: 0 2px;
-    min-height: 38px;
-  }
-
-  .header nav a {
-    margin: 0 4px;
-    padding: 5px 6px;
-    font-size: 0.92rem;
-  }
-
-  .login-btn {
-    padding: 5px 8px;
-    font-size: 0.92rem;
-  }
-}
-
 @media (max-width: 400px) {
   .header-title-bg h1,
   .header h1 {
     font-size: 0.85rem;
     padding: 2px 2px;
+    margin-bottom: 6px;
   }
-
   .header nav {
     font-size: 0.8rem;
     gap: 1px;
     padding: 0 1px;
     min-height: 30px;
   }
-
   .header nav a {
     margin: 0 1px;
     padding: 3px 4px;
     font-size: 0.8rem;
   }
-
   .login-btn {
     padding: 3px 4px;
     font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+  .header-title-bg h1,
+  .header h1 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    padding: 4px 6px;
+  }
+  .header nav {
+    font-size: 0.92rem;
+    gap: 2px;
+    padding: 0 2px;
+    min-height: 38px;
+  }
+  .header nav a {
+    margin: 0 4px;
+    padding: 5px 6px;
+    font-size: 0.92rem;
+  }
+  .login-btn {
+    padding: 5px 8px;
+    font-size: 0.92rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header-title-bg {
+    padding: 20px 0 12px;
+  }
+  .header-title-bg h1,
+  .header h1 {
+    font-size: 1.5rem;
+    padding: 8px 18px;
+    margin-bottom: 10px;
+  }
+  .header nav {
+    font-size: 1rem;
+    gap: 8px;
+    padding: 0 10px;
+    min-height: 44px;
+  }
+  .header nav a {
+    margin: 0 6px;
+    padding: 8px 14px;
+    font-size: 1rem;
+  }
+  .login-btn {
+    padding: 7px 14px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-title-bg {
+    padding: 32px 0 18px;
+  }
+  .header-title-bg h1,
+  .header h1 {
+    font-size: 2.1rem;
+    padding: 12px 38px;
+    margin-bottom: 14px;
+  }
+  .header nav {
+    font-size: 1.08rem;
+    gap: 14px;
+    padding: 0 24px;
+    min-height: 54px;
+  }
+  .header nav a {
+    margin: 0 10px;
+    padding: 10px 22px;
+    font-size: 1.08rem;
+  }
+  .login-btn {
+    padding: 9px 22px;
+    font-size: 1.05rem;
   }
 }

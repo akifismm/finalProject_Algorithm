@@ -7,9 +7,7 @@
   font-size: 1.05rem;
   letter-spacing: 0.5px;
   margin-top: 40px;
-  position: relative;
-  left: 0;
-  bottom: 0;
+  /* position: fixed;   */
 }
 
 .content {
@@ -53,15 +51,58 @@
   margin: 0 4px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .content {
     flex-direction: column;
     gap: 8px;
     text-align: center;
-    padding: 0 4px;
+    padding: 0 2px;
   }
   .left, .center, .right {
     justify-content: center;
     width: 100%;
+    font-size: 0.98rem;
+    gap: 6px;
+  }
+  .footer {
+    font-size: 0.98rem;
+    padding: 14px 0 10px 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 8px;
+  }
+  .left, .center, .right {
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+    gap: 8px;
+  }
+  .footer {
+    font-size: 1rem;
+    padding: 16px 0 12px 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .content {
+    flex-direction: row;
+    gap: 12px;
+    padding: 0 16px;
+  }
+  .left, .center, .right {
+    justify-content: flex-start;
+    width: auto;
+    font-size: 1.05rem;
+    gap: 8px;
+  }
+  .footer {
+    font-size: 1.05rem;
+    padding: 18px 0 14px 0;
   }
 }

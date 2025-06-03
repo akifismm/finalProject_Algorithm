@@ -80,3 +80,88 @@
   background: #f7c873;
   color: #2e3c5d;
 }
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 98vw;
+    min-width: 0;
+    margin: 10px auto;
+    padding: 0 2px;
+  }
+  .imgBox {
+    padding: 10px 4px 6px 4px;
+  }
+  .img {
+    max-height: 120px;
+  }
+  .body {
+    padding: 0 6px 10px 6px;
+  }
+  .name {
+    font-size: 0.98rem;
+    min-height: 36px;
+  }
+  .seller, .price {
+    font-size: 0.92rem;
+  }
+  .addBtn {
+    font-size: 0.95rem;
+    padding: 7px 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card {
+    max-width: 240px;
+    min-width: 0;
+    margin: 14px auto;
+  }
+  .imgBox {
+    padding: 14px 8px 8px 8px;
+  }
+  .img {
+    max-height: 140px;
+  }
+  .body {
+    padding: 0 10px 14px 10px;
+  }
+  .name {
+    font-size: 1.02rem;
+    min-height: 40px;
+  }
+  .seller, .price {
+    font-size: 0.98rem;
+  }
+  .addBtn {
+    font-size: 0.98rem;
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card {
+    max-width: 320px;
+    min-width: 220px;
+    margin: 18px auto;
+  }
+  .imgBox {
+    padding: 18px 12px 8px 12px;
+  }
+  .img {
+    max-height: 180px;
+  }
+  .body {
+    padding: 0 18px 18px 18px;
+  }
+  .name {
+    font-size: 1.08rem;
+    min-height: 48px;
+  }
+  .seller, .price {
+    font-size: 1.08rem;
+  }
+  .addBtn {
+    font-size: 1rem;
+    padding: 9px 0;
+  }
+}
