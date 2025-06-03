@@ -96,7 +96,7 @@ const Shop = () => {
               className={styles.categorySelect}
             >
               <option value="all">Hamısı</option>
-              {categories.map(cat => (
+              {categories.slice(0,4).map(cat => (
                 <option key={cat} value={cat}>{cat}</option>
               ))}
             </select>
